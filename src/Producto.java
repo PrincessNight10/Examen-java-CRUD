@@ -2,21 +2,22 @@ import java.lang.String;
 
 public class Producto {
     private int codigo;
-    private char nombre;
-    private char cantidad;
-
-    private char descripcion ;
-
-
+    private String nombre;
+    private String cantidad;
+    private String descripcion;
 
     public Producto(int codigo, String nombre, String cantidad, String descripcion) {
+        this.codigo = codigo;
+        this.nombre = nombre;
+        this.cantidad = cantidad;
+        this.descripcion = descripcion;
     }
 
-    public char getDescripcion() {
+    public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripcion(char descripcion) {
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
@@ -28,22 +29,19 @@ public class Producto {
         this.codigo = codigo;
     }
 
-    public char getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    public void setNombre(char nombre) {
+    public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public char getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(char cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
-    }
-
-    public void setNombre(String nuevonombre) {
     }
 }
